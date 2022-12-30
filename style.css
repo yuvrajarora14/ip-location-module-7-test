@@ -86,8 +86,10 @@ input{
     position: absolute;
     width: 90%;
     height: 649px;
+    padding: 10px;
     top: 320px;
     left: 41px;
+    border:5px solid black;
 }
 
 .bottom1{
