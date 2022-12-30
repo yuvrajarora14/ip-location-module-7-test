@@ -23,15 +23,378 @@
       </div>
     </div>
 
-  <div id="maps"></div>
+  <div id="maps" class="map-container"></div>
 
     <div class="bottom1">
       Country: <span id="country"></span><br /><br />
       Time Zone: <span id="timezone"></span><br /><br />
       Date:<span id="date"></span>  & Time:<span id="time_12"></span><br /><br />
       Pincode: <span id="pincode"></span><br /><br />
-      Message: Number of pincode(s) found:
-      <input type="text" id="message" /><br />
+      Total <span id="Message"></span><br><br />
+    </div>
+
+    <div class="search">
+      <input type="text" id="filter1" placeholder="Filter" />
+    </div>
+
+    <div class="lastcontainer">
+      <div class="lastcontainerdata left upper">
+        Name <span id="name5"></span><br/><br/>
+        Branch Type  <span id="branch5"></span><br/><br/>
+        Delivery Status  <span id="status5"></span><br/><br/>
+        District  <span id="dist5"></span><br/><br/>
+        Division <span id="div5"></span> 
+      </div>
+
+      <div class="lastcontainerdata left middle">
+        Name <span id="name"></span><br/><br/>
+        Branch Type  <span id="branch"></span><br/><br/>
+        Delivery Status  <span id="status"></span><br/><br/>
+        District  <span id="dist"></span><br/><br/>
+        Division <span id="div"></span> 
+      </div>
+
+      <div class="lastcontainerdata left lower">
+        Name <span id="name2"></span><br/><br/>
+        Branch Type  <span id="branch2"></span><br/><br/>
+        Delivery Status  <span id="status2"></span><br/><br/>
+        District  <span id="dist2"></span><br/><br/>
+        Division <span id="div2"></span> 
+      </div>
+
+      <div class="lastcontainerdata right upper">
+        Name <span id="name3"></span><br/><br/>
+        Branch Type  <span id="branch3"></span><br/><br/>
+        Delivery Status  <span id="status3"></span><br/><br/>
+        District  <span id="dist3"></span><br/><br/>
+        Division <span id="div3"></span> 
+      </div>
+
+      <div class="lastcontainerdata right middle">
+        Name <span id="name4"></span><br/><br/>
+        Branch Type  <span id="branch4"></span><br/><br/>
+        Delivery Status  <span id="status4"></span><br/><br/>
+        District  <span id="dist4"></span><br/><br/>
+        Division <span id="div4"></span> 
+      </div>
+
+      <div class="lastcontainerdata right lower">
+        Name <span id="name6"></span><br/><br/>
+        Branch Type  <span id="branch6"></span><br/><br/>
+        Delivery Status  <span id="status6"></span><br/><br/>
+        District  <span id="dist6"></span><br/><br/>
+        Division <span id="div6"></span> 
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>get data</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="my">MY Public IP ADDRESS:<span id="ip"></span></div>
+      <div class="latlong1">
+        Lat: <span id="lat"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span> City: <span id="city"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span> Organisation: <span id="org"></span></span>
+      </div>
+      <div class="latlong2">
+        Long: <span id="long"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span> Region: <span id="region"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span> Hostname: Yuvraj</span>
+      </div>
+    </div>
+
+  <div id="maps" class="map-container"></div>
+
+    <div class="bottom1">
+      Country: <span id="country"></span><br /><br />
+      Time Zone: <span id="timezone"></span><br /><br />
+      Date:<span id="date"></span>  & Time:<span id="time_12"></span><br /><br />
+      Pincode: <span id="pincode"></span><br /><br />
+      Total <span id="Message"></span><br><br />
+    </div>
+
+    <div class="search">
+      <input type="text" id="filter1" placeholder="Filter" />
+    </div>
+
+    <div class="lastcontainer">
+      <div class="lastcontainerdata left upper">
+        Name <span id="name5"></span><br/><br/>
+        Branch Type  <span id="branch5"></span><br/><br/>
+        Delivery Status  <span id="status5"></span><br/><br/>
+        District  <span id="dist5"></span><br/><br/>
+        Division <span id="div5"></span> 
+      </div>
+
+      <div class="lastcontainerdata left middle">
+        Name <span id="name"></span><br/><br/>
+        Branch Type  <span id="branch"></span><br/><br/>
+        Delivery Status  <span id="status"></span><br/><br/>
+        District  <span id="dist"></span><br/><br/>
+        Division <span id="div"></span> 
+      </div>
+
+      <div class="lastcontainerdata left lower">
+        Name <span id="name2"></span><br/><br/>
+        Branch Type  <span id="branch2"></span><br/><br/>
+        Delivery Status  <span id="status2"></span><br/><br/>
+        District  <span id="dist2"></span><br/><br/>
+        Division <span id="div2"></span> 
+      </div>
+
+      <div class="lastcontainerdata right upper">
+        Name <span id="name3"></span><br/><br/>
+        Branch Type  <span id="branch3"></span><br/><br/>
+        Delivery Status  <span id="status3"></span><br/><br/>
+        District  <span id="dist3"></span><br/><br/>
+        Division <span id="div3"></span> 
+      </div>
+
+      <div class="lastcontainerdata right middle">
+        Name <span id="name4"></span><br/><br/>
+        Branch Type  <span id="branch4"></span><br/><br/>
+        Delivery Status  <span id="status4"></span><br/><br/>
+        District  <span id="dist4"></span><br/><br/>
+        Division <span id="div4"></span> 
+      </div>
+
+      <div class="lastcontainerdata right lower">
+        Name <span id="name6"></span><br/><br/>
+        Branch Type  <span id="branch6"></span><br/><br/>
+        Delivery Status  <span id="status6"></span><br/><br/>
+        District  <span id="dist6"></span><br/><br/>
+        Division <span id="div6"></span> 
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>get data</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="my">MY Public IP ADDRESS:<span id="ip"></span></div>
+      <div class="latlong1">
+        Lat: <span id="lat"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span> City: <span id="city"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span> Organisation: <span id="org"></span></span>
+      </div>
+      <div class="latlong2">
+        Long: <span id="long"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span> Region: <span id="region"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span> Hostname: Yuvraj</span>
+      </div>
+    </div>
+
+  <div id="maps" class="map-container"></div>
+
+    <div class="bottom1">
+      Country: <span id="country"></span><br /><br />
+      Time Zone: <span id="timezone"></span><br /><br />
+      Date:<span id="date"></span>  & Time:<span id="time_12"></span><br /><br />
+      Pincode: <span id="pincode"></span><br /><br />
+      Total <span id="Message"></span><br><br />
+    </div>
+
+    <div class="search">
+      <input type="text" id="filter1" placeholder="Filter" />
+    </div>
+
+    <div class="lastcontainer">
+      <div class="lastcontainerdata left upper">
+        Name <span id="name5"></span><br/><br/>
+        Branch Type  <span id="branch5"></span><br/><br/>
+        Delivery Status  <span id="status5"></span><br/><br/>
+        District  <span id="dist5"></span><br/><br/>
+        Division <span id="div5"></span> 
+      </div>
+
+      <div class="lastcontainerdata left middle">
+        Name <span id="name"></span><br/><br/>
+        Branch Type  <span id="branch"></span><br/><br/>
+        Delivery Status  <span id="status"></span><br/><br/>
+        District  <span id="dist"></span><br/><br/>
+        Division <span id="div"></span> 
+      </div>
+
+      <div class="lastcontainerdata left lower">
+        Name <span id="name2"></span><br/><br/>
+        Branch Type  <span id="branch2"></span><br/><br/>
+        Delivery Status  <span id="status2"></span><br/><br/>
+        District  <span id="dist2"></span><br/><br/>
+        Division <span id="div2"></span> 
+      </div>
+
+      <div class="lastcontainerdata right upper">
+        Name <span id="name3"></span><br/><br/>
+        Branch Type  <span id="branch3"></span><br/><br/>
+        Delivery Status  <span id="status3"></span><br/><br/>
+        District  <span id="dist3"></span><br/><br/>
+        Division <span id="div3"></span> 
+      </div>
+
+      <div class="lastcontainerdata right middle">
+        Name <span id="name4"></span><br/><br/>
+        Branch Type  <span id="branch4"></span><br/><br/>
+        Delivery Status  <span id="status4"></span><br/><br/>
+        District  <span id="dist4"></span><br/><br/>
+        Division <span id="div4"></span> 
+      </div>
+
+      <div class="lastcontainerdata right lower">
+        Name <span id="name6"></span><br/><br/>
+        Branch Type  <span id="branch6"></span><br/><br/>
+        Delivery Status  <span id="status6"></span><br/><br/>
+        District  <span id="dist6"></span><br/><br/>
+        Division <span id="div6"></span> 
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>get data</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="my">MY Public IP ADDRESS:<span id="ip"></span></div>
+      <div class="latlong1">
+        Lat: <span id="lat"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span> City: <span id="city"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span> Organisation: <span id="org"></span></span>
+      </div>
+      <div class="latlong2">
+        Long: <span id="long"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span> Region: <span id="region"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span> Hostname: Yuvraj</span>
+      </div>
+    </div>
+
+  <div id="maps" class="map-container"></div>
+
+    <div class="bottom1">
+      Country: <span id="country"></span><br /><br />
+      Time Zone: <span id="timezone"></span><br /><br />
+      Date:<span id="date"></span>  & Time:<span id="time_12"></span><br /><br />
+      Pincode: <span id="pincode"></span><br /><br />
+      Total <span id="Message"></span><br><br />
+    </div>
+
+    <div class="search">
+      <input type="text" id="filter1" placeholder="Filter" />
+    </div>
+
+    <div class="lastcontainer">
+      <div class="lastcontainerdata left upper">
+        Name <span id="name5"></span><br/><br/>
+        Branch Type  <span id="branch5"></span><br/><br/>
+        Delivery Status  <span id="status5"></span><br/><br/>
+        District  <span id="dist5"></span><br/><br/>
+        Division <span id="div5"></span> 
+      </div>
+
+      <div class="lastcontainerdata left middle">
+        Name <span id="name"></span><br/><br/>
+        Branch Type  <span id="branch"></span><br/><br/>
+        Delivery Status  <span id="status"></span><br/><br/>
+        District  <span id="dist"></span><br/><br/>
+        Division <span id="div"></span> 
+      </div>
+
+      <div class="lastcontainerdata left lower">
+        Name <span id="name2"></span><br/><br/>
+        Branch Type  <span id="branch2"></span><br/><br/>
+        Delivery Status  <span id="status2"></span><br/><br/>
+        District  <span id="dist2"></span><br/><br/>
+        Division <span id="div2"></span> 
+      </div>
+
+      <div class="lastcontainerdata right upper">
+        Name <span id="name3"></span><br/><br/>
+        Branch Type  <span id="branch3"></span><br/><br/>
+        Delivery Status  <span id="status3"></span><br/><br/>
+        District  <span id="dist3"></span><br/><br/>
+        Division <span id="div3"></span> 
+      </div>
+
+      <div class="lastcontainerdata right middle">
+        Name <span id="name4"></span><br/><br/>
+        Branch Type  <span id="branch4"></span><br/><br/>
+        Delivery Status  <span id="status4"></span><br/><br/>
+        District  <span id="dist4"></span><br/><br/>
+        Division <span id="div4"></span> 
+      </div>
+
+      <div class="lastcontainerdata right lower">
+        Name <span id="name6"></span><br/><br/>
+        Branch Type  <span id="branch6"></span><br/><br/>
+        Delivery Status  <span id="status6"></span><br/><br/>
+        District  <span id="dist6"></span><br/><br/>
+        Division <span id="div6"></span> 
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>get data</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div id="my">MY Public IP ADDRESS:<span id="ip"></span></div>
+      <div class="latlong1">
+        Lat: <span id="lat"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span> City: <span id="city"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span> Organisation: <span id="org"></span></span>
+      </div>
+      <div class="latlong2">
+        Long: <span id="long"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span> Region: <span id="region"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span> Hostname: Yuvraj</span>
+      </div>
+    </div>
+
+  <div id="maps" class="map-container"></div>
+
+    <div class="bottom1">
+      Country: <span id="country"></span><br /><br />
+      Time Zone: <span id="timezone"></span><br /><br />
+      Date:<span id="date"></span>  & Time:<span id="time_12"></span><br /><br />
+      Pincode: <span id="pincode"></span><br /><br />
+      Total <span id="Message"></span><br><br />
     </div>
 
     <div class="search">
